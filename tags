@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BLOCK_SIZE	structure.h	11;"	d
+DIRECTORY_SIZE	structure.h	12;"	d
+DataBlock	structure.h	/^}DataBlock;$/;"	t	typeref:struct:datablock
+DiskInode	structure.h	/^}DiskInode;$/;"	t	typeref:struct:diskinode
+FileS_namei	Files_namei.h	/^int FileS_namei(char path[30],int cur_inode)$/;"	f
+INODE_TABLE_SIZE	structure.h	9;"	d
+MyDir	structure.h	/^}MyDir;$/;"	t	typeref:struct:dir
+NUM_OF_DATA_dblock	structure.h	7;"	d
+NUM_OF_INODE	structure.h	8;"	d
+SuperBlock	structure.h	/^}SuperBlock;$/;"	t	typeref:struct:superblock
+TOTAL_dblock	structure.h	10;"	d
+alloc	alloc.h	/^int alloc()$/;"	f
+change_directory	change_directory.h	/^void change_directory(char path[30],int cur_inode)$/;"	f
+cmdprompt	structure.h	/^char cmdprompt[30];$/;"	v
+currentDir	structure.h	/^MyDir currentDir;$/;"	v
+d_link	structure.h	/^  short int d_link;$/;"	m	struct:diskinode
+datablock	structure.h	/^typedef struct datablock$/;"	s
+datafree	datafree.h	/^int datafree(int i)$/;"	f
+db	structure.h	/^  DataBlock db;           $/;"	m	struct:diskinode
+dblock	structure.h	/^  unsigned int dblock[10];$/;"	m	struct:datablock
+dir	structure.h	/^typedef struct dir{$/;"	s
+disk_inode_list_size	structure.h	/^  unsigned int disk_inode_list_size;$/;"	m	struct:superblock
+diskinode	structure.h	/^typedef struct diskinode{$/;"	s
+flag	structure.h	/^  	   int flag;$/;"	m	struct:superblock
+fname	structure.h	/^  char fname[16];$/;"	m	struct:dir
+free_block_list	structure.h	/^	char free_block_list[NUM_OF_DATA_dblock];$/;"	m	struct:superblock
+free_inode_list	structure.h	/^  	char free_inode_list[NUM_OF_INODE];$/;"	m	struct:superblock
+fs_size	structure.h	/^  	int fs_size;$/;"	m	struct:superblock
+future_use	structure.h	/^  char future_use[48];$/;"	m	struct:diskinode
+idb	structure.h	/^  DataBlock *idb;          $/;"	m	struct:diskinode
+iname	structure.h	/^  char iname[16];$/;"	m	struct:diskinode
+inodealloc	inodealloc.h	/^int inodealloc()$/;"	f
+inodefree	inodefree.h	/^int inodefree(int inum)$/;"	f
+inum	structure.h	/^  int inum;$/;"	m	struct:diskinode
+inum	structure.h	/^  short int inum;$/;"	m	struct:dir
+list	list.h	/^void list(int cur_inode)$/;"	f
+lname	structure.h	/^  short int lname;$/;"	m	struct:dir
+main	main.c	/^int main()$/;"	f
+mountFS	mountFS.h	/^void mountFS(int sizeinmb,int blksize)$/;"	f
+myappend	myappend.h	/^int myappend(int inode)$/;"	f
+mycreat	mycreat.h	/^int mycreat(char *filename ,int curinode)$/;"	f
+mymkdir	mymkdir.h	/^int mymkdir(char *filename, int curinode)$/;"	f
+myopen	myopen.h	/^int myopen(char *filename ,int curinode)$/;"	f
+myread	myread.h	/^int myread(int inode)$/;"	f
+myremove	myremove.h	/^int myremove(char *filename, int curinode)		$/;"	f
+myremovedir	myremovedir.h	/^int myremovedir(char *filename, int curinode)$/;"	f
+mywrite	mywrite.h	/^int mywrite(int inode)$/;"	f
+no_of_free_dblock	structure.h	/^  unsigned int no_of_free_dblock;$/;"	m	struct:superblock
+no_of_free_inodes_disk	structure.h	/^  unsigned int no_of_free_inodes_disk;$/;"	m	struct:superblock
+number_of_dblock	structure.h	/^  int number_of_dblock;     $/;"	m	struct:diskinode
+root_index	structure.h	/^  	   int root_index;$/;"	m	struct:superblock
+sb	structure.h	/^SuperBlock sb;$/;"	v
+size	structure.h	/^  unsigned int size;        $/;"	m	struct:diskinode
+superblock	structure.h	/^typedef struct superblock$/;"	s
+type	structure.h	/^  int type;     	$/;"	m	struct:diskinode
